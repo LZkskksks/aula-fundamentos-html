@@ -1,0 +1,1 @@
+Eu troquei a cor de fundo por um degradê azul para deixar a página mais bonita, adicionei uma borda azul nas imagens para destacá-las e coloquei um efeito de inclinação com zoom quando o mouse passa em cima, deixando a galeria mais dinâmica.

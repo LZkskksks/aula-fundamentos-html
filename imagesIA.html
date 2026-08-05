@@ -14,7 +14,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #4B0082, #8A2BE2, #DA70D6);
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             font-family: Arial, Helvetica, sans-serif;
             padding: 20px;
         }
@@ -24,9 +24,9 @@
             height: 500px;
             object-fit: cover;
             border-radius: 20px;
-            border: 5px solid white;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
+            border: 5px solid #6ec6ff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s;
         }
 
         .img-destaque:hover {
@@ -34,9 +34,9 @@
         }
 
         .div-images {
-            margin-top: 25px;
+            margin-top: 30px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             gap: 20px;
         }
 
@@ -45,25 +45,26 @@
             height: 250px;
             object-fit: cover;
             border-radius: 20px;
-            border: 5px solid white;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
+            border: 5px solid #6ec6ff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transform: rotate(-3deg);
+            transition: transform 0.4s;
         }
 
         .img-pequena:hover {
-            transform: scale(1.08);
+            transform: rotate(0deg) scale(1.08);
         }
     </style>
 </head>
 
 <body>
 
-    <img class="img-destaque" src="F1.jpg" alt="Imagem destaque">
+    <img class="img-destaque" src="F1.jpg" alt="bugatti la voitre noire">
 
     <div class="div-images">
-        <img class="img-pequena" src="F2.webp" alt="Imagem 2">
-        <img class="img-pequena" src="F3.jpeg" alt="Imagem 3">
-        <img class="img-pequena" src="F4.jpg" alt="Imagem 4">
+        <img class="img-pequena" src="F2.webp" alt="ferrari SF90">
+        <img class="img-pequena" src="F3.jpeg" alt="homem aranha">
+        <img class="img-pequena" src="F4.jpg" alt="aleezin">
     </div>
 
 </body>
