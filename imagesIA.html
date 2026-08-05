@@ -7,139 +7,63 @@
     <title>Galeria de Imagens</title>
 
     <style>
-        /* ===== RESET ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* ===== BODY ===== */
         body {
+            background: linear-gradient(135deg, #4B0082, #8A2BE2, #DA70D6);
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #7b2cbf, #5a189a);
-            min-height: 100vh;
-            padding: 30px;
+            padding: 20px;
         }
 
-        /* ===== CONTAINER ===== */
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* ===== TÍTULO ===== */
-        h1 {
-            color: white;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2.2rem;
-        }
-
-        /* ===== TODAS AS IMAGENS ===== */
-        img {
-            width: 100%;
-            display: block;
-            border-radius: 20px;
-            object-fit: cover;
-            transition: .3s ease;
-            cursor: pointer;
-            box-shadow: 0 8px 15px rgba(0,0,0,.3);
-        }
-
-        img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 12px 20px rgba(0,0,0,.4);
-        }
-
-        /* ===== IMAGEM PRINCIPAL ===== */
         .img-destaque {
+            width: 100%;
             height: 500px;
-            margin-bottom: 25px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
         }
 
-        /* ===== GALERIA ===== */
-        .galeria {
+        .img-destaque:hover {
+            transform: scale(1.02);
+        }
+
+        .div-images {
+            margin-top: 25px;
             display: flex;
+            justify-content: space-between;
             gap: 20px;
         }
 
-        .galeria img {
+        .img-pequena {
+            width: 30%;
             height: 250px;
-            flex: 1;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
         }
 
-        /* ===== RESPONSIVO ===== */
-        @media (max-width: 768px) {
-
-            body {
-                padding: 15px;
-            }
-
-            .img-destaque {
-                height: 300px;
-            }
-
-            .galeria {
-                flex-direction: column;
-            }
-
-            .galeria img {
-                height: 220px;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
+        .img-pequena:hover {
+            transform: scale(1.08);
         }
-
-        @media (max-width: 480px) {
-
-            .img-destaque {
-                height: 220px;
-            }
-
-            .galeria img {
-                height: 180px;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
-
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <img class="img-destaque" src="F1.jpg" alt="Imagem destaque">
 
-        <h1>Galeria de Imagens</h1>
-
-        <!-- Imagem principal -->
-        <img
-            class="img-destaque"
-            src="aula-fundamentos-html/F1.jpg"
-            alt="Imagem principal">
-
-        <!-- Galeria -->
-        <div class="galeria">
-
-            <img
-                src="aula-fundamentos-html/F2.webp"
-                alt="Primeira imagem">
-
-            <img
-                src="aula-fundamentos-html/F3.jpeg"
-                alt="Segunda imagem">
-
-            <img
-                src="aula-fundamentos-html/F4.jpg"
-                alt="Terceira imagem">
-
-        </div>
-
+    <div class="div-images">
+        <img class="img-pequena" src="F2.webp" alt="Imagem 2">
+        <img class="img-pequena" src="F3.jpeg" alt="Imagem 3">
+        <img class="img-pequena" src="F4.jpg" alt="Imagem 4">
     </div>
 
 </body>
