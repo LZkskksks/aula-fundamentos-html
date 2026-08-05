@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        .img-destaque {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid #6ec6ff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s;
+        }
+
+        .img-destaque:hover {
+            transform: scale(1.02);
+        }
+
+        .div-images {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .img-pequena {
+            width: 30%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid #6ec6ff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transform: rotate(-3deg);
+            transition: transform 0.4s;
+        }
+
+        .img-pequena:hover {
+            transform: rotate(0deg) scale(1.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://youtu.be/XYQEUVl-8ZA?si=vQMJ4zat4uTC-Lae" target="_blank">
+        <img class="img-destaque" src="F1.jpg" alt="Imagem destaque">
+    </a>
+
+    <div class="div-images">
+        <a href="https://youtu.be/97VKB4XTHRE?si=7LNq_jMpMqj5NQzH" target="_blank">
+            <img class="img-pequena" src="F2.webp" alt="Imagem 2">
+        </a>
+
+        <a href="https://youtu.be/o4YuHBY-MJg?si=r__GioayyMZmuWsZ" target="_blank">
+            <img class="img-pequena" src="F3.jpeg" alt="Imagem 3">
+        </a>
+
+        <a href="https://youtube.com/@alee__olhaaeee?si=31uJfQsJSIbV0Z89" target="_blank">
+            <img class="img-pequena" src="F4.jpg" alt="Imagem 4">
+        </a>
+    </div>
+
+</body>
+
+</html>
